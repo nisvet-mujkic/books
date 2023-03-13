@@ -6,7 +6,8 @@ export default function App() {
   const [books, setBooks] = useState([]);
 
   const createBook = (title) => {
-    console.log("Add book: " + title);
+    const updatedBooks = [...books, { id: 1, title }];
+    setBooks(updatedBooks);
   };
 
   const editBook = () => {};
